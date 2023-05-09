@@ -1,0 +1,68 @@
+/* global fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+ 
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+ 
+
+ul {
+    list-style: none;
+}
+/*  navbar  */
+
+.navbar {
+    background-color: darkslategrey;
+    padding: 20px 0;
+}
+.nav-link {
+    color: white;
+    
+}
+.navbar .container {
+    padding: 15px 0 ;
+}
+.navbar .navbar-brand {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.navbar .nav-item {
+margin-left: 40px;
+}
+.navbar .nav-item .nav-link {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+    position: relative;
+}
+.navbar .nav-item .nav-link::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 1px;
+    right: 0;
+    background-color: #ffffff;
+    bottom: 0;
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+.navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link:hover::before{
+    transform: scale(1);
+}
+ .homeStart {
+    margin-top: 190px;
+ }
