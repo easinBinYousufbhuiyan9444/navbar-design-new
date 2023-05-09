@@ -60,6 +60,7 @@ margin-left: 40px;
     transform: scale(0);
 }
 
+
 .navbar .nav-item .nav-link.active::before,
 .navbar .nav-item .nav-link:hover::before{
     transform: scale(1);
